@@ -1,0 +1,93 @@
+<!-- <h1>Customer {{}}</h1> -->
+<form [formGroup]="customerForm" (ngSubmit)="save()">
+<div mat-dialog-content>
+  <div class="row">
+    <div class="col-2" ></div>
+    <div class="col-4 col-sm-4 column">
+      <table class="table table-sm table-borderless">
+        <!-- type -->
+        <tr style="height:2px;">
+          <td >
+            <mat-label>Type</mat-label>
+        </td>
+        <td><i class="fas fa-angle-right"></i></td>
+          <td>
+            <mat-form-field  appearance="standard">
+              <mat-select  [(value)]="selected" name="type">
+                <mat-option >
+                  <mat-option value="person" >Person</mat-option>
+                  <mat-option value="business">Business</mat-option>
+                </mat-option>
+              </mat-select>
+          </mat-form-field>
+        </td>
+        </tr>
+        <!-- firstname -->
+        <tr  style="height:2px;">
+        <td>
+          <mat-label>First name</mat-label>
+      </td>
+      <td><i class="fas fa-angle-right"></i></td>
+        <td >
+          <mat-form-field class="example-full-width" appearance="standard">
+          <input matInput formControlName="firstName" placeholder="Peter">
+        </mat-form-field></td>
+      </tr>
+      <!-- email -->
+      <tr>
+        <td>
+          <mat-label>email</mat-label>
+      </td>
+      <td>></td>
+        <td>
+          <mat-form-field class="example-full-width" appearance="standard">
+          <input matInput  formControlName="email" placeholder="Peter@mail.com">
+        </mat-form-field></td>
+      </tr>
+      <!-- total -->
+      <tr>
+        <td>
+          <mat-label>total</mat-label>
+      </td>
+      <td>></td>
+        <td>
+          <mat-form-field class="example-full-width" appearance="standard">
+          <input matInput  formControlName="total" placeholder="0">
+        </mat-form-field></td>
+      </tr>
+    </table>
+    </div>
+    <div class="col-2" ></div>
+    <div class="col-4 col-sm-4 next" style="padding-top: 93px;">
+      <table class=" table table-sm table-borderless example-full-width" cellspacing="2">
+        <tr>
+          <td>
+            <mat-label>Last name</mat-label>
+        </td>
+        <td>></td>
+          <td>
+            <mat-form-field class="example-full-width" appearance="standard">
+            <input matInput  formControlName="lastName" placeholder="Tosh">
+          </mat-form-field></td>
+        </tr>
+      <tr>
+        <td>
+          <mat-label>cell phone</mat-label>
+      </td>
+      <td>></td>
+      <td>
+          <mat-form-field class="example-full-width" appearance="standard">
+          <input matInput  formControlName="cellphone" placeholder="07100000">
+        </mat-form-field></td>
+      </tr>
+    </table>
+    </div>
+  </div>
+
+</div>
+<div mat-dialog-actions>
+  <button class="button" mat-raised-button color="primary"  mat-dialog-close style="background-color:forestgreen;">Back to List</button>
+  <button class="button" mat-raised-button  type="submit">save</button>
+</div>
+</form>
+

@@ -1,16 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddEditCustomerComponent } from './customer/add-edit-customer/add-edit-customer.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import * as customer from "./customer/index";
+import {HttpClientModule} from"@angular/common/http";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    CommonModule,
+    HttpClientModule,
+    customer.CustomerModule,
+    customer.AddEditCustomerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

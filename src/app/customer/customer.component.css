@@ -1,0 +1,18 @@
+.mat-elevation-z8 {
+    width: 100%;
+   
+  }
+ .mat-form-field {
+    font-size: 14px;
+    width: 10%;
+    left: 70%;
+    margin-left: -41px;
+    position: relative;
+  }
+.button{
+    background-color:forestgreen;
+    margin: 7px;
+}
+th.mat-sort-header-sorted {
+    color: black;
+  }
