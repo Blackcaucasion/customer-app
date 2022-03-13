@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 # CustomerApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
-
+### Getting started
+You need VS code and angular CLI .clone and open the projet in vs code .run `npm install` to install project dependecies
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -26,6 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
 # customer-app
->>>>>>> a201c176065507650d3cbe1756915b5a957c0536
